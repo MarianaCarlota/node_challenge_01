@@ -1,0 +1,11 @@
+{
+  "name": "node_challenge_01",
+  "version": "1.0.0",
+  "description": "rocketseat node.js course challenge 01",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
