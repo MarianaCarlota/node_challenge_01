@@ -5,11 +5,11 @@ export async function json(req, res) {
     buffers.push(chunk);
   }
 
-  try {
-    req.body = JSON.parse(Buffer.concat(Buffer.concat(buffers).toString()));
-  } catch {
-    req.body = null;
-  }
+    try {
+      req.body = JSON.parse(Buffer.concat(buffers).toString());
+    } catch {
+      req.body = null;
+    }
 
   res.setHeader('Content-type', 'application/json');
 }
